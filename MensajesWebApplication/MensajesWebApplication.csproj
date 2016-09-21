@@ -58,10 +58,37 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TareaDatabase_log.ldf">
+      <DependentUpon>TareaDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="MasterWebForm.aspx" />
     <Content Include="MensajesWebForm.aspx" />
+    <Content Include="App_Data\TareaDatabase.mdf" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSite.Master.cs">
+      <DependentUpon>MasterSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterSite.Master.designer.cs">
+      <DependentUpon>MasterSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterWebForm.aspx.cs">
+      <DependentUpon>MasterWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterWebForm.aspx.designer.cs">
+      <DependentUpon>MasterWebForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MensajesWebForm.aspx.cs">
       <DependentUpon>MensajesWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -72,6 +99,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterSite.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -84,6 +112,9 @@
       <Project>{a8cb65f1-cb12-45c9-89f3-f6c7b7b98f6e}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataBase\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

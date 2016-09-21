@@ -18,7 +18,7 @@
 <body>
     <form id="Mensajes" runat="server">
     <div>
-         <h1>Mensajeria</h1> 
+         <h1 class="text-center">Mensajeria</h1> 
         <asp:TextBox ID="MensajeIdTextBox" runat="server" CssClass="form-control " placeholder="Mensaje Id"></asp:TextBox><br/><br/>
         <asp:TextBox ID="EmailTextBox" runat="server" CssClass="form-control " placeholder="Email"></asp:TextBox><br/><br/>
         <asp:TextBox ID="AsuntoTextBox" runat="server" CssClass="form-control " placeholder="Asunto"></asp:TextBox><br/><br/>

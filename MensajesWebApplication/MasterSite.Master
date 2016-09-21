@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterSite.master.cs" Inherits="MensajesWebApplication.MasterSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+       <style type="text/css">  
+        body form {
+	    width:400px;
+	    height:400px;
+	    margin:0 auto;
+        background-color:#D5EDEF;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Masterform" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <marquee><h1>MPagina Principal</h1></marquee>
+            <asp:LinkButton ID="MensajeriaButton" runat="server" CssClass="btn btn-info" Text="Enviar" OnClick="MensajeriaButton_Click"><span class="glyphicon glyphicon-send"></span>&nbsp;Mensajeria</asp:LinkButton>  
+    </div>
+    </form>
+</body>
+</html>
